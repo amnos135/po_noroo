@@ -1,0 +1,767 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #wrapper {
+        width: 768px;
+        height: 100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        /*  background-color: pink; */
+    }
+
+    #header {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+
+
+
+    /* 노루페인트 초록색 로고 */
+
+
+    #logo {
+        float: none;
+        width: 42px;
+        height: 42px;
+        margin: 0 auto;
+    }
+
+    #logo>div {
+
+        left: 10px;
+        top: 5px;
+        width: 80px;
+        height: 80px;
+        background: url(../img/noroo_logo_deer.png) no-repeat;
+        background-size: 80px;
+        margin: 0 auto;
+    }
+
+    #login {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 50px;
+    }
+
+    .container-1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .icon {
+        background-image: url(../img/search.png);
+        background-repeat: no-repeat;
+        background-size: 18px;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        z-index: 99999;
+        top: -42px;
+        left: 200px;
+    }
+
+    .container-1 input#search {
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        z-index: 999;
+        width: 190px;
+        height: 33px;
+        background: white;
+        border: none;
+        font-size: 12pt;
+        float: left;
+        color: black;
+        padding-left: 20px;
+        padding-right: 40px;
+        border: 1px solid #ddd;
+        -webkit-border-radius: 20%;
+        -moz-border-radius: 20%;
+        border-radius: 30px;
+        box-shadow: 1px 3px 5px #ddd;
+    }
+
+
+    #gnb {
+        width: 768px;
+    }
+
+    #menu_slide {
+        margin-top: 20px;
+        display: none;
+    }
+
+    #banner {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 480px;
+        background-color: red;
+
+    }
+
+    #banner>.arrow {
+        position: absolute;
+        text-align: center;
+        font-size: 100px;
+        z-index: 99;
+    }
+
+    #banner>.arrow_left {
+        cursor: pointer;
+        background: url(../img/Vector.png) no-repeat;
+        background-position: center left;
+        width: 100px;
+        height: 480px;
+        position: absolute;
+        left: 5px;
+        z-index: 9999;
+        top: -10px;
+    }
+
+
+    #banner>.arrow_right {
+        cursor: pointer;
+        background: url(../img/Vector.png) no-repeat;
+        background-position: center left;
+        width: 100px;
+        height: 480px;
+        position: absolute;
+        right: 5px;
+        z-index: 99;
+        transform: scaleX(-1);
+        top: -10px;
+    }
+
+
+    #banner ul.introduce {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        top: -60px;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    #banner ul.introduce li {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    #banner ul.introduce li:nth-child(2) {
+        left: 100%;
+    }
+
+    #banner ul.introduce li:nth-child(3) {
+        left: 200%;
+    }
+
+    #banner>ul.introduce>li:first-child>a,
+    #banner>ul.introduce>li:nth-child(2)>a,
+    #banner>ul.introduce>li:nth-child(3)>a {
+        display: block;
+        width: 768px;
+        height: 500px;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #banner>ul.introduce>li:first-child>a {
+        background-image: url(../img/Untitled768-1.png);
+    }
+
+    #banner>ul.introduce>li:nth-child(2)>a {
+        background-image: url(../img/Untitled768-2.png);
+    }
+
+    #banner>ul.introduce>li:nth-child(3)>a {
+        background-image: url(../img/Untitled-3.png);
+    }
+
+    /* 롤링배너 안의 테레사 프레이타스 문구 */
+
+
+    .introduce span:first-child {
+        display: block;
+        font-size: 2.5em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: relative;
+        top: -20px;
+        left: 50px;
+    }
+
+    .introduce span:last-child {
+        display: block;
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: -1px;
+        position: relative;
+        top: -20px;
+
+        left: 50px;
+    }
+
+    #buttonList:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #buttonList li {
+        background: url(../img/btnVisual.png) 0 -16px no-repeat;
+        width: 14px;
+        height: 15px;
+        float: left;
+        position: relative;
+        left: 48%;
+        top: 30px;
+        overflow: hidden;
+        margin: 0 5px;
+        cursor: pointer;
+        z-index: 999;
+
+    }
+
+    #buttonList li a {
+        display: block;
+        text-indent: -9999px;
+    }
+
+
+
+
+    /* 섹션-콘텐츠(유투브부터 인스타까지) 시작 */
+    #contents {
+        width: 100%;
+        margin-top: 30px;
+        /*         background: royalblue;
+ */
+    }
+
+    #contents .contents1 .youtube {
+        float: left;
+        width: 48%;
+        height: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    #contents .youtube .vid1 video {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        left: 0;
+    }
+
+    #contents .youtube .vid2 video {
+        position: absolute;
+        width: 100%;
+        top: 260px;
+    }
+
+    /* 카드섹션 */
+
+
+    #contents .contents1 .cards {
+        float: left;
+        width: 50%;
+        position: relative;
+        top: -10px;
+        left: -10px;
+    }
+
+
+
+    #contents .contents1 .cards ul li {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        position: relative;
+        right: -12px;
+    }
+
+    #contents .contents1 .cards ul li img {
+        float: left;
+        width: 100%;
+        height: 209px;
+        /* ?????? */
+        position: relative;
+        object-fit: cover;
+    }
+
+ 
+
+    .cards span {
+        display: block;
+        width: 390px;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding: 10px 0;}
+
+        .cards li:hover span {
+            display: block;
+            width: 390px;
+            text-align: center;
+            font-weight: 600;
+            padding: 10px 0;
+            -webkit-text-stroke-width: 0.1px;
+         }
+
+
+
+    .cards .mini {
+        width: 32px;
+        height: 38px;
+        position: absolute;
+        top: 155px;
+        right: 60px;
+        z-index: 99999999;
+        background: url(../img/mini_Vector.png);
+    }
+
+
+
+        #contents .contents1 .cards ul li:first-child,
+        #contents .contents1 .cards ul li:nth-child(2) {
+            display: none;
+        }
+
+
+        /* 인스타그램 */
+        .con_wrapper {
+            /* background-color: seagreen; */
+            margin-top: -90px;
+        }
+
+        .instagram {
+
+            width: 95%;
+            height: 230px;
+            overflow: hidden;
+            position: relative;
+            left: 20px;
+            /* 왜 이거를 움직이면 중심이 흩어지는거임? 괘 가운데에 안있음? */
+            /*         outline: 1px solid blue;
+ */
+        }
+
+        section>.contents2 {
+            margin: 0 auto;
+            width: 768px;
+            height: 240px;
+            font-size: 0;
+            /*         outline: 5px solid black;
+ */
+        }
+
+
+        section>.contents2 li {
+            width: 180px;
+            height: 180px;
+            margin-right: 0px;
+            float: left;
+
+        }
+
+
+
+        /* 푸터 */
+
+
+
+        #footer {
+            width:100%;
+            height: 200px;
+            margin-top: 50px;
+            background-color: #2e2e2e;
+        }
+
+
+
+        #wrapper_footer {
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            position: relative;
+
+        }
+
+
+        /* 메뉴 */
+
+        #footer1 {
+            width: 100%;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        #footer .footer1 {
+            width: inherit;
+            background-color: #2e2e2e;
+            padding-bottom: 220px;
+
+
+        }
+
+        .footer1_1 {
+            margin-top: 10px;
+            width: 60%;
+            float: left;
+            /*         outline: 1px solid red;
+ */
+
+        }
+
+        .footer1_1>ul>li {
+            float: left;
+            margin-right: 30px;
+            padding: 5px 0px;
+            width: 80px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+
+
+        .footer1_1>ul>li>div>a {
+            color: white;
+
+        }
+
+        .footer1_1>ul>li>div {
+            box-sizing: border-box;
+            border-bottom: 2px solid #2e2e2e;
+        }
+
+
+
+        .footer1_1>ul>li:last-child {
+            margin-right: 0px;
+        }
+
+
+        .footer1_1>ul>li>ul {
+            margin-top: 10px;
+            height: 150px;
+        }
+
+        .footer1_1>ul>li>ul>li {
+            box-sizing: border-box;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+
+        }
+
+
+        .footer1_1>ul>li>ul {
+            background-color: white;
+
+        }
+
+        .footer1_1 .sub_menu {
+            clear: both;
+            background-color: #4e4e4e;
+            width: 95%;
+            height: 130px;
+            color: white;
+
+        }
+
+        .footer1_1 {
+            padding-left: 10px;
+        }
+
+        .footer1_1 .sub_menu ul {
+            float: left;
+            width: 94px;
+            text-align: center;
+            margin: 5px;
+            font-size: 13px;
+            box-sizing: border-box;
+
+        }
+
+        .footer1_1 .sub_menu ul:last-child {
+            margin-right: 0px;
+        }
+
+        .footer1_1 .sub_menu ul>li {
+            height: 38px;
+            line-height: 40px;
+        }
+
+
+
+
+
+        /* sns와 패밀리사이트 */
+        .footer1_2 {
+            width: 40%;
+            /*         background-color: brown;
+ */
+        }
+
+        .footer_sns {
+            width: 90%;
+            float: right;
+            position: relative;
+            right: 30px;
+
+            /*    outline: 3px solid blue; ???????????????*/
+
+        }
+
+        .footer_sns img {
+            width: 12%;
+            height: 12%;
+        }
+
+        .footer_sns>a>img {
+            float: right;
+            margin: 7px;
+        }
+
+        #familysite1 {
+            margin-top: 15px;
+            width: 180px;
+            float: right;
+            margin-right: -34px;
+        }
+
+
+
+
+        /* 햄버거햄버가햄버거햄버거 */
+        .m_nav_btn {
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 10px;
+        }
+
+        .m_nav_btn img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #mo_nav {
+            position: fixed;
+            width: 150%;
+            height: 150%;
+            top: 0;
+            z-index: 9999;
+            display: none;
+
+        }
+
+        #mo_nav:after {
+            content: '';
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #mo_nav .mo_bg_nav {
+            position: absolute;
+            width: 85%;
+            height: 100%;
+            z-index: 55;
+            right: 0;
+            background: white;
+        }
+
+        #mo_nav .mo_close {
+            position: absolute;
+            right: 85.95%;
+            margin: 17px 15px 0 0;
+            z-index: 56;
+            /* 이거 올리니까  x가 클릭되게 됐음,,위의 z-index:55보다 높게 해야겠지~ */
+        }
+
+        .mo_top_gnb {
+            width: 100%;
+            height: 60px;
+            /* worthy */
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb li {
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            padding-left: 25px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb li a {
+            color: white;
+            font-size: 14px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns {
+            float: right;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li {
+            float: left;
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li a {
+            display: block;
+            text-indent: -99999px;
+            width: 23px;
+            height: 23px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li.sns1 a {
+            background: url(../img/icon_facebook_m.png) no-repeat center center;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li.sns2 a {
+            background: url(../img/icon_inst_m.png) no-repeat center center;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li.sns3 a {
+            background: url(../img/icon_you_m.png) no-repeat center center;
+        }
+
+        #mo_nav .mo_bg_nav .mo_top_gnb .top_sns li.sns4 a {
+            background: url(../img/icon_blog_m.png) no-repeat center center;
+            margin-right: 25px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_depth1>li {
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_depth1>li>div>a {
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            padding-left: 25px;
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            background: url(../img/icon_arrow_m2.png) no-repeat right center;
+            margin-right: 20px;
+        }
+
+        #mo_nav .mo_bg_nav .mo_depth1>li>div.on>a {
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            padding-left: 25px;
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            background: url(../img/icon_arrow_m3.png) no-repeat right center;
+            margin-right: 20px;
+        }
+
+
+
+        #mo_nav .mo_bg_nav .mo_depth1 li.color>div>a {
+            background: url(../img/icon_arrow_m1.png) no-repeat right center;
+            margin-right: 20px;
+        }
+
+        /* 서브메뉴 */
+        #mo_nav .mo_bg_nav .mo_depth2 li a {
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            padding-left: 25px;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+        }
+
+        #mo_nav .mo_bg_nav .mo_depth2 li:hover a {
+            color: green;
+        }
+
+
+
+        /* 햄버거버튼 누르면 나오는 메뉴에서 서치랑 로그인 */
+
+
+
+        .container-2 input#search2 {
+
+            display: none;
+        }
+
+
+
+        .logindoor2 {
+            position: relative;
+            top: 30px;
+            left: 47px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .logindoor2::after {
+            content: url(../img/log-in.png);
+            margin-left: 5px;
+        }
+
+
+        .icon2 {
+            display: none;
+        }
+
+
+        .mo_depth1 {
+            display: block;
+        }
+
+
+        .logindoor {
+            display: none;
+        }
+
+
+    }
